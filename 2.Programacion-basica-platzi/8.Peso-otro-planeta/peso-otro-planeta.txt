@@ -1,0 +1,23 @@
+Peso en la tierra
+g = 9.8 m/s2
+
+Peso en marte
+g = 3.7 m/s2
+
+peso en jupiter
+g = 24.8
+
+
+Ejemplo mi peso es 77 en la gravedad en a tierra
+
+marte = (peso*9.8)/3.7
+ 
+ regla de tres simple
+
+ p ---> g
+ ? ---> marte
+
+Para rendondear:
+ parseInt 
+
+ ---Internamente para Js es una variable de números entero.

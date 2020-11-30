@@ -1,0 +1,15 @@
+HTML 
+tiene head body
+
+Script
+alert - se recomienda colocarlo al final de body.
+document.write. lo escribe
+
+
+Tener en cuenta que las variables:
+
+
+    -No pueden empezar con números, sólo con letras
+    -Se diferencian mayúsculas y minúsculas, se recpmienda usar solo minúscula
+    -No se pueden utilizar caracteres "raros" como ñ o tildes
+
