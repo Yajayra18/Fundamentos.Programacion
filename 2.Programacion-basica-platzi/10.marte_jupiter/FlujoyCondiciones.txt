@@ -1,0 +1,21 @@
+Repasando JavaScript
+
+  Prompt  es como un imput, es decir te sale una ventana en el navegador donde se introduce un string (cadena de texto), en donde se le asigne 
+
+  Ejemplo
+
+  var usuario = prompt ("Cual es tu peso?");
+
+  --Sale una ventana donde pregunta "cual es tu peso" y hay un espacio para escribir.
+  --- lo que escribamos se cuardará en la variable usuario. 
+
+  Ojo! se guarda en string para ponerlo en número habrá que casteralo. Ejemplo:
+
+  var peso = parseInt(usuario);
+
+  -Lo que hicimos es castearlo a un número entero y guardarlo en la variable peso.
+
+- Por otro lado 
+ /n: salto de linea en Js, el equivalente a /br en html.
+
+ Nan : significa not a nomber

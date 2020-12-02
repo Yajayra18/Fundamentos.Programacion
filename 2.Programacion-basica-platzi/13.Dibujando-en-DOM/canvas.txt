@@ -1,0 +1,13 @@
+Canvas funciona como coordenadas, a diferencia que la esquina superior a la derencha es 0,0 
+
+0,0     200x
+
+
+
+200y
+
+En canvas por defecto tiene un ancho y un alto, pero le podemos reasignar otro.
+Ejemplo:
+Le reasigné 300px de ancho y 300px de alto
+
+<canvas width="300" height="300"></canvas>

@@ -1,0 +1,22 @@
+
+
+var usuario = prompt("Cual es tu peso")
+var peso = parseInt(usuario);
+
+Cuando uso prompt es como un imput, entonces cuando el usuario introduce algo lo hace como string"" .
+Es por eso que uso parseInt... lo convierte a un numero.
+
+Nota:
+Los bloques de codigo tiene llave de apertura y llave de cierre no tienen punto y coma dentro
+{}
+
+=; es la forma de asignar
+(); parametros de una función
+var; variable
+== ; igual
+if; si condicional
+else if; Si no, si
+else; sino
+document.write(); mostrar algun contenido.
+
+"bla" + variable +"bla bla" + 23 "g" ; concatenar número, variable y estring
