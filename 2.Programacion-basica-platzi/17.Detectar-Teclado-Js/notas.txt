@@ -1,0 +1,87 @@
+Dibujaremos un canvas que arranque del centro y dependiendo de que flechas ponga se desplazará una línea.
+
+Si tenemos un canvas de 300 x 300  <canvas width="300" height="300" id="area_de_dibujo"></canvas> (notita nosotros podemos definir el tamaño del canvas)
+
+normalmentetenemos un punto en el centro. el objetivo del proyecto es que al presionar la fecha del teclado desplace el punto. 
+
+. Central x: 150 ; y: 150
+
+cada vez que movemos tiene que sumar o restar en x o en y
+
+↑ -y
+↓ +y
+→ +x
+← -x
+
+Cada vez que movamos se sumará o restará a cantidad de pixeles que defina, así podemos dibujar lo que queremos. 
+
+Problemas:
+  - Cómo detectamos  las flechas, 
+  - Cuál de los eventos es y como se llama( cuando oprimo o cuando suelto la tecla)
+  - Como hago para dibujar líneas.
+  - cuando haga una línea se tiene que recortar el punto alterior dependiento el punto de la flecha. 
+
+
+
+
+
+  A Resolverlo.
+
+  Primero creamos el html digitando dentro del body el canvas y script.
+
+  <canvas width="300" height="300" id="area_de_dibujo"></canvas>
+  <script src="eventos.js"></script>
+
+***La forma de detectar que se ha presionado una tecla es a través de document, jamás con canva.
+en Js se pondría docume.addEventListener("keydow" también puede ser "keyup")
+
+
+  ¿Cual es el objeto que detecta la tecla?
+  document.addEventListener("keydown", dibujarTeclado);
+     ↑                         ↑      ↑(función de dibujar con el teclado)
+                        la forma en la que se llama cuando uno oprime una tecla
+
+  *en Document es el lugar donde podemos detectar si cualquier tecla ha sido presionado.*
+  *la forma en la que se llama a que uno oprima una tecla es keydown*
+
+
+
+  function dibujarTeclado()
+  {
+    alert("OMG")
+  }
+  ↑ lo que hace es que en el momento que oprima una tecla sale una alerta.
+  
+
+
+Notita: los eventos no necesitan parametros por que son opcionales (dentro de ellos ya tiene cosas predeterminadas y con console log lo conocemos, pero si queremos podemos conocer los datos)
+
+  function dibujarTeclado(evento)
+                            ↑  
+      En esta variable(parametro) están todos los detalles de cómo sucedió este evento, el detalle que más nos interesa es cual tecla fue oprimida.
+
+      podemos ver como está construido por dento si lo hacemos así
+        function dibujarTeclado(evento)
+        {
+          console.log("Tecla oprimida")
+          console.log(evento)
+        }
+"keydow"  
+    Si tengo una tecla oprimida, varias veces se va a disparar el evento (si no suelto la tecla disparará el evento muchas veces super rápido)
+
+"keyup"
+    Si mantengo oprimida la tecla solo disparaá el evento, es decir lo contará, si suelto la tecla. 
+
+    Existe Variables que tienen más variables por dentro ejem:
+    var teclas = {
+      UP: 38,
+      DOWN: 40,
+      LEFT: 37,
+      RIGHT: 39  <-- Aquí no va coma
+    };
+
+    ----> cuando se pone variables que serán constantes o al menos no va a cambiar en mucho tiempo se ponen en mayúscula.
+
+  Cuando tenemos muchos if y tenemos un comparador
+
+  switch se usa cuando hay varias comparaciones, normalmente  switch hace más facil de leer casos super específicos. sin embargo se debe usar solo cuando hace más facil leer el código lo mismo para if. 

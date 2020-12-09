@@ -1,0 +1,40 @@
+Por el lado de html ya sabemos que 
+ - <meta charset="UTF-8"/> -- es para agregar tildes, eñes
+ - h1 es un titulo
+  - p es un parrafo
+  - br es un salto de linea
+  - input se puede colocar diferentes elementos de formularios uno es el texto y otro es el boton.
+  - id se identifica para trabajar en Js
+  - value es el valor del  boton
+  - canvas es el lugar abierto que se puede trabaajr con js
+  - sabemos cargar scrips eternos
+
+Por el lado de Js aprendimos que con
+
+  - obtiene un html con getElementById
+  - var es una variable y que tiene objetos ( var boton; va es variable, boton es el objeto)
+  - los objetos pueden tener eventos con click
+  - podemos dibujar en 2d o 3d, con canvas
+  - hay funciones que reciben parametros
+  - hay funciones que no reciben parametros y se disparan en momentos especiales
+  -la forma de obtener el valor de un formulario es con value.
+  - parseInt convierte un texto en un numero
+  - hay ciclos while o for ; 
+  - for 3 parametros ( variable iteradora  que arranca el ciclo; condicion en la que el ciclo se ejecuta; instrucción cada vez que el ciclo es completado)
+  - console.log que nos permite mandar mensajes de depuración a la consola del navegador sin afectar la forma visual en la que funciona.
+
+  Notitas importantes
+    *Puedes obtener un elemento por su id buscándolo con document.getElementById("nombre_id");
+       ↑        ↑                  ↑ 
+    * getContext es una función(metodo) del objeto canvas. para definir si nuestro vancas será 2D o 3D.
+    tiene muchas cosas dentro que nos permitirá dibujar.
+    * Existen diversos eventos: pasaste de pestaña a pestaña a pestaña, los eventos pueden ser simples y complejos. 
+    addEventListener(escuchador de los eventos) funciona igual que getElementById 
+
+    Momento cuando el mouse esta encima del boton es un evento (hover)
+    para el evento click se pone el evento click
+       addEventListener(click, función que se va a ejecutar cuando sucede el vento click)
+
+       boton.addEventListener("click", dibujoPorClick); --> de la clase 16
+       boton.addEventListener("click", dibujoPorClick()); --> si es con parentesis se ejecuta la función dibujoPorClick cuando lo lea el Js sin considerar el evento click.
+    Recordar que con console.log se puede ver lo que tiene dentro.

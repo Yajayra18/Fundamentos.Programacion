@@ -11,3 +11,14 @@ Ejemplo:
 Le reasigné 300px de ancho y 300px de alto
 
 <canvas width="300" height="300"></canvas>
+
+el canvas es una caja blanca
+
+La forma de obtener en Js el elemento por su ID 
+getElementById;
+
+es una función del objeto canvas, que me permite obtener el área donde vamos a dibujar.
+getContext
+
+
+la funcion en Js siempre se va a renderizar primero. 
