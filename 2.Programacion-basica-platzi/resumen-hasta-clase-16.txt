@@ -35,6 +35,8 @@ Por el lado de Js aprendimos que con
     para el evento click se pone el evento click
        addEventListener(click, función que se va a ejecutar cuando sucede el vento click)
 
-       boton.addEventListener("click", dibujoPorClick); --> de la clase 16
+       boton.addEventListener("click", dibujoPorClick); --> ejecuta la función cuando le hacemos click al evento
        boton.addEventListener("click", dibujoPorClick()); --> si es con parentesis se ejecuta la función dibujoPorClick cuando lo lea el Js sin considerar el evento click.
     Recordar que con console.log se puede ver lo que tiene dentro.
+
+    Como hago para saber cual es el verdadero valor se pone value
