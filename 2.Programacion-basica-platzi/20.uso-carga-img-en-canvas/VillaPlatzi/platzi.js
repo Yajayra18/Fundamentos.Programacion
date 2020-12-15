@@ -1,6 +1,6 @@
 var vp = document.getElementById("villaplatzi");
 var papel = vp.getContext("2d");
-/* "tile.png"; --->llamamos la imagen*/
+/* var mapa = "tile.png"; --->llamamos la imagen*/
 
 var fondo = {
   url: "tile.png",
@@ -12,12 +12,14 @@ var vaca = {
   cargaOK: false
 };
 
-fondo.imagen = new Image(); /*--> cargamos la imagen*/
+
+var cantidad = aleatorio(0, 4);
+fondo.imagen = new Image();
 fondo.imagen.src = fondo.url;
-fondo.imagen.addEventListener("load", cargarFondo); /*el escuchador cuando detecta que la imagen ha sido cargada inicia la función dibujar*/
+fondo.imagen.addEventListener("load", cargarFondo);
 
 vaca.imagen = new Image();
-vaca.imagen.scr = vaca.url;
+vaca.imagen.src = vaca.url;
 vaca.imagen.addEventListener("load", cargarVacas);
 
 function cargarFondo()
@@ -30,16 +32,29 @@ function cargarVacas()
 {
   vaca.cargaOK = true;
   dibujar();
+  console.log("aparicion de vaca");
 }
 
 function dibujar() {
-  if (fondo.cargaOK == true)
+  console.log("aqui2");
+  if (fondo.cargaOK)
   {
     papel.drawImage(fondo.imagen, 0, 0);
   }
-  if (vaca.cargaOK == true)
+  if (vaca.cargaOK)
   {
-    papel.drawImage(vaca.imagen, 100, 0);
+    
+    console.log(cantidad);
+    for(var v=0; v < cantidad; v++)
+    {
+    var x = aleatorio(0,7);
+    var y = aleatorio(0,7);
+    var x = x * 60;
+    var y = y * 60;
+    papel.drawImage(vaca.imagen, x, y);
+    }
+
+    
   }
 }
 
