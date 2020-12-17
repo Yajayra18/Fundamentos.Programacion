@@ -1,0 +1,12 @@
+require busca los frameworksy trae la librería.
+
+ojo que se usa libreria especial que se trae con require.
+
+aplicacion.get es como event listener
+
+/ es como el home de la página web
+
+requez es petición, lo que el navegador pide al servidor
+responsive es lo que el servidor envía al navegador.
+
+el servidor se corre con listen. 
