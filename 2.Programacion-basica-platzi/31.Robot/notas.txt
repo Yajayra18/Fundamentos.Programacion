@@ -1,0 +1,11 @@
+Robot
+
+la fotoresistencia, le pasa flujo electrico y nosotros debemos retectar si pasa más o menos. así mediremos si está oscuro o si es de día.
+
+1er paso: tazar un cable de 5v del arduino a nuestro circuito, en el lado + y -.. Lo que haremos es resistirlo para que el fotoresistor funcione (330ohm)
+2do paso: el cable estará conectada a las entradas de los arduinos que reciben información.
+
+habrá un let rojo donde lo prenderemos cuando esté oscuro y apagar cuadno esté claro.
+
+Luwego queremos mover nuestro servo de un lugar a otro, es tiene un puerto positivo uno negativo y un puerto de datos.
+
